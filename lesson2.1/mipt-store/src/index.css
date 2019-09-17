@@ -1,0 +1,168 @@
+body {
+  background-color: #e6e6fc;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-item {
+  background-color: #5495df;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board-item {
+  width: 140px;
+  height: 180px;
+  background-color: grey;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* 
+  Псевдоселектор. CSS-свойство применяется при наведении на элемент
+*/
+.board-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.board-item img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 5px;
+}
+
+.board-item_content_price {
+  font-size: 10px;
+}
+
+/*
+  Эти CSS-свойства позволяют вставлять в конце строки троеточи
+  Если слово имеет большуют длину
+*/
+.board-item_content_title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 
+  Медиа свойства. Используются дла адаптивной верстки
+  Например, тут свойства применяются для всех разрешений меньше 801px
+*/
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-item {
+    width: 100%;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  header a {
+    max-width: 100%;
+    margin: 5px;
+  }
+
+  .header-item + .header-item {
+    margin-top: 5px;
+  }
+
+  .board {
+    justify-content: space-around;
+  }
+}
+
+/*
+  Убираем стандартные стили ссылок
+*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_image {
+  width: 100%;
+}
+
+button {
+  background-color: #5495df;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.create-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.create-form form {
+  background-color: grey;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-item label {
+  width: 150px;
+}
+
+.form-item input {
+  width: 150px;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.create-form form button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
