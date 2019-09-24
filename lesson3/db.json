@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhonne",
+      "description": "Айфон 11",
+      "price": 60000,
+      "owner": 1
+    },
+    {
+      "id": 2,
+      "name": "iPad",
+      "description": "Афпад 11",
+      "price": 40000,
+      "owner": 1
+    },
+    {
+      "name": "samsung",
+      "price": 1000,
+      "description": "samsun",
+      "id": 3,
+      "owner": 1
+    },
+    {
+      "name": "xiaomi",
+      "price": 10000,
+      "description": "xiaomi mi mix2s",
+      "owner": 1,
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ivan",
+      "lastName": "Ivanov"
+    }
+  ]
+}
