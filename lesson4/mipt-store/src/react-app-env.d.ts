@@ -11,3 +11,7 @@ interface IProductState {
   productList: number[]
   products: { [key: number]: IProduct }
 }
+
+interface IState {
+  products: IProductState
+}

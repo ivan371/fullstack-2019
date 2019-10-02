@@ -1,7 +1,13 @@
 import { connect } from 'react-redux'
-import ProductCard from './ProductCard'
+import ProductCard, {
+  IProductStateCardProps,
+  IProductOwnCardProps
+} from './ProductCard'
 
-function mapStateToProps(state: any, props: any) {
+function mapStateToProps(
+  state: IState,
+  props: IProductOwnCardProps
+): IProductStateCardProps {
   const { productId } = props
 
   return {

@@ -2,16 +2,27 @@ import React from 'react'
 import iPhone from '../../assets/iphone.jpg'
 import Spinner from '../../components/Spinner'
 
-interface IProductProps {
+export interface IProductStateProps {
+  isLoading: boolean
+  product: IProduct
+}
+
+export interface IProductDispatchProps {
+  fetchProduct: (productId: string) => void
+}
+
+export interface IProductOwnProps {
   match: {
     params: {
       productId: string
     }
   }
-  fetchProduct: (productId: string) => void
-  isLoading: boolean
-  product: IProduct
 }
+
+interface IProductProps
+  extends IProductStateProps,
+    IProductDispatchProps,
+    IProductOwnProps {}
 
 const Product: React.FC<IProductProps> = (props) => {
   const { fetchProduct, match, isLoading, product } = props

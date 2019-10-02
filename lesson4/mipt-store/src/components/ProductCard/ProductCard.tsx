@@ -2,12 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import image from '../../assets/image.jpg'
 
-interface IProductCard {
+export interface IProductStateCardProps {
   product: IProduct
 }
 
-const ProductCard: React.FC<IProductCard> = (props) => {
+export interface IProductOwnCardProps {
+  productId: number
+}
+
+interface IProductCardProps
+  extends IProductStateCardProps,
+    IProductOwnCardProps {}
+
+const ProductCard: React.FC<IProductCardProps> = (props) => {
   const { product } = props
+
   if (!product) {
     return null
   }

@@ -1,15 +1,22 @@
 import { connect } from 'react-redux'
 import { fetchProduct } from '../../actions/products'
-import Product from './Product'
+import Product, {
+  IProductStateProps,
+  IProductDispatchProps,
+  IProductOwnProps
+} from './Product'
 
-function mapStateToProps(state: any, props: any) {
+function mapStateToProps(
+  state: IState,
+  props: IProductOwnProps
+): IProductStateProps {
   return {
-    product: state.products.products[props.match.params.productId],
+    product: state.products.products[Number(props.match.params.productId)],
     isLoading: state.products.isLoading
   }
 }
 
-const mapDispatchToProps = {
+const mapDispatchToProps: IProductDispatchProps = {
   fetchProduct
 }
 
