@@ -1,0 +1,25 @@
+body {
+  background-color: #e6e6fc;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+  Убираем стандартные стили ссылок
+*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: #5495df;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
