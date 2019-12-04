@@ -3,3 +3,4 @@
 *.pyc
 *.vscode/
 *.DS_Store
+*.conf

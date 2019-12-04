@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "name": "iPhone",
+      "price": 60001,
+      "description": "Айфон 12",
+      "owner": 1,
+      "id": 1
+    },
+    {
+      "name": "iPad",
+      "price": 40000,
+      "description": "Айпад 11",
+      "owner": 1,
+      "id": 2
+    },
+    {
+      "name": "samsung",
+      "price": 1001,
+      "description": "samsun",
+      "owner": 1,
+      "id": 3
+    },
+    {
+      "name": "xiaomi",
+      "price": 10000,
+      "description": "xiaomi mi mix2s",
+      "owner": 1,
+      "id": 4
+    },
+    {
+      "name": "Товар",
+      "price": 1000,
+      "description": "Просто товар",
+      "owner": 1,
+      "id": 5
+    },
+    {
+      "name": "Объява",
+      "price": 1000,
+      "description": "Еще одна",
+      "owner": 1,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ivan",
+      "lastName": "Ivanov"
+    }
+  ]
+}
