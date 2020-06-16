@@ -1,7 +1,7 @@
 appnope==0.1.0
 backcall==0.1.0
 decorator==4.4.0
-Django==2.2.8
+Django==2.2.13
 django-rest-framework==0.1.0
 djangorestframework==3.10.3
 ipython==7.8.0
